@@ -1,4 +1,9 @@
 package rw.bnr.javane.repository;
 
-public class TransactionRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import rw.bnr.javane.model.Transaction;
+
+@Repository
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 }
